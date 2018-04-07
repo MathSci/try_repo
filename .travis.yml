@@ -1,4 +1,6 @@
-#  .travis.yml     python 27 to 3, with conda                  Date : 2018-04-07
+#  .travis.yml     python 27 to 3, with Miniconda             Date : 2018-04-07
+#  FEATURES: pytest, flake8, pandas, pip and conda.
+
 
 #  PREQUISITES for integration testing of a Python repository:
 #              -  .travis.yml
@@ -22,7 +24,7 @@
 
 
 #  REFERENCES
-#  trusty:= Ubuntu 14.04 distribution.
+#        trusty:= Ubuntu 14.04 distribution.
 #  Python setup: https://docs.travis-ci.com/user/languages/python
 #  Install dependencies: https://docs.travis-ci.com/user/installing-dependencies
 #  Customization: https://docs.travis-ci.com/user/customizing-the-build
@@ -96,11 +98,12 @@ install:
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
+  #      Q: What is hash for?  TODO
   - conda config --set always_yes yes --set changeps1 no
   - conda config --add channels pandas
   - conda update -q conda
-  # Useful for debugging any issues with conda
   - conda info -a
+  #       ^useful for debugging any issues with conda.
   - conda create -q -n test-environment python=$PYTHON coverage setuptools html5lib lxml pytest pytest-cov wrapt
   - source activate test-environment
   - if [[ "$PANDAS" == "MASTER" ]]; then
@@ -131,7 +134,7 @@ script:
     #        -s means --capture=no for per-test capturing method: fd|sys|no.
     #        Note we skip options pytest-cov plugin for code coverage. 
     - flake8 --version
-    - flake8 setup.py
+    - flake8 test_4pytest.py
     #        ^mere example.
     #  - flake8 pandas_datareader
 
