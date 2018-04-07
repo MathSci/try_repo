@@ -1,8 +1,9 @@
-#  .travis.yml             Python projects                    Date : 2018-04-06
+#  .travis.yml     python 27 to 3, with conda                  Date : 2018-04-07
 
-#  PREQUISITES for repository:
+#  PREQUISITES for integration testing of a Python repository:
 #              -  .travis.yml
 #              -  setup.py (could be empty).
+#              -  test_4pytest.py (or some dummy test to report something)
 
 
 #  Check the BUILD STATUS page to see if your build passes or fails:
@@ -15,6 +16,11 @@
 #      which comes before the optional deploy phase.
 
 
+#  Commits that have [ci skip] or [skip ci] anywhere in the commit messages
+#  are ignored by Travis CI. When multiple commits are pushed together, that
+#  takes effect only if present in the HEAD commit.
+
+
 #  REFERENCES
 #  trusty:= Ubuntu 14.04 distribution.
 #  Python setup: https://docs.travis-ci.com/user/languages/python
@@ -25,7 +31,8 @@
 
 
 #  CHANGE LOG
-#  2018-04-07  Add reference notes and comments.
+#  2018-04-07  Add reference notes and comments. Edit out fluff.
+#                 Skip DOCBUILD, doctr, and sphinx.
 #  2018-04-06  First version, pure from pandas_datareader
 
 
@@ -54,24 +61,28 @@ env:
 
 matrix:
   fast_finish: true
+  #            ^Marks the build as finished ASAP.
+
   include:
+  #  - dist: trusty
+  #    env:
+  #      - PYTHON=3.6 PANDAS=0.22 DOCBUILD=true
+  #  - dist: trusty
+  #    env:
+  #      - PYTHON=3.6 PANDAS="MASTER"
+  - dist: trusty
+    env:
+      - PYTHON=3.6 PANDAS=0.22
+  # Must repeat exactly in "allow failures:" section...
   - dist: trusty
     env:
       - PYTHON=2.7 PANDAS=0.22
-  - dist: trusty
-    env:
-      - PYTHON=3.6 PANDAS=0.21.1
-  - dist: trusty
-    env:
-      - PYTHON=3.6 PANDAS=0.22 DOCBUILD=true
-  # In allow failures
-  - dist: trusty
-    env:
-      - PYTHON=3.6 PANDAS="MASTER"
   allow_failures:
-    - dist: trusty
-      env:
-        - PYTHON=3.6 PANDAS="MASTER"
+  - dist: trusty
+    env:
+      - PYTHON=2.7 PANDAS=0.22
+      #  By 2020-01-01, we pledge to deprecate straddling code.
+
 
 install:
   - pip install -qq flake8
@@ -99,13 +110,14 @@ install:
     else
       conda install pandas=$PANDAS;
     fi
-  - if [[ $DOCBUILD ]]; then
-      conda install sphinx ipython matplotlib;
-      pip install sphinx_rtd_theme doctr;
-    fi
-  - pip install beautifulsoup4
+  #  - if [[ $DOCBUILD ]]; then
+  #      conda install sphinx ipython matplotlib;
+  #      pip install sphinx_rtd_theme doctr;
+  #    fi
+  #  - pip install beautifulsoup4
   #  - pip install coveralls --quiet
   #  #             ^for "after success:" section below.
+  - conda install matplotlib
   - conda list
   - python setup.py install
 
