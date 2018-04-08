@@ -1,0 +1,920 @@
+travis_fold:start:worker_info 0K 33;1mWorker information 0m
+hostname: e4f01133-cd20-4853-84f5-77586f72e1c1@1.i-0b39462-production-2-worker-org-ec2.travisci.net
+version: v3.6.0 https://github.com/travis-ci/worker/tree/170b2a0bb43234479fd1911ba9e4dbcc36dadfad
+instance: 1ac9d72 travisci/ci-garnet:packer-1512502276-986baf0 (via amqp)
+startup: 437.228338ms
+travis_fold:end:worker_info 0Kmode of ‘/usr/local/clang-5.0.0/bin' changed from 0777 (rwxrwxrwx) to 0775 (rwxrwxr-x)
+travis_fold:start:system_info 0K 33;1mBuild system information 0m
+Build language: python
+Build group: stable
+Build dist: trusty
+Build id: 363651829
+Job id: 363651830
+Runtime kernel version: 4.14.12-041412-generic
+travis-build version: ef2f5cbc9
+ 34m 1mBuild image provisioning date and time 0m
+Tue Dec  5 20:11:19 UTC 2017
+ 34m 1mOperating System Details 0m
+Distributor ID:     Ubuntu
+Description:     Ubuntu 14.04.5 LTS
+Release:     14.04
+Codename:     trusty
+ 34m 1mCookbooks Version 0m
+7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
+ 34m 1mgit version 0m
+git version 2.15.1
+ 34m 1mbash version 0m
+GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
+ 34m 1mgcc version 0m
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 34m 1mdocker version 0m
+Client:
+ Version:      17.09.0-ce
+ API version:  1.32
+ Go version:   go1.8.3
+ Git commit:   afdb6d4
+ Built:        Tue Sep 26 22:39:28 2017
+ OS/Arch:      linux/amd64
+ 34m 1mclang version 0m
+clang version 5.0.0 (tags/RELEASE_500/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/local/clang-5.0.0/bin
+ 34m 1mjq version 0m
+jq-1.5
+ 34m 1mbats version 0m
+Bats 0.4.0
+ 34m 1mshellcheck version 0m
+0.4.6
+ 34m 1mshfmt version 0m
+v2.0.0
+ 34m 1mccache version 0m
+ccache version 3.1.9
+
+Copyright (C) 2002-2007 Andrew Tridgell
+Copyright (C) 2009-2011 Joel Rosdahl
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+ 34m 1mcmake version 0m
+cmake version 3.9.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+ 34m 1mheroku version 0m
+heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
+ 34m 1mimagemagick version 0m
+Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
+ 34m 1mmd5deep version 0m
+4.2
+ 34m 1mmercurial version 0m
+Mercurial Distributed SCM (version 4.2.2)
+(see https://mercurial-scm.org for more information)
+
+Copyright (C) 2005-2017 Matt Mackall and others
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ 34m 1mmysql version 0m
+mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
+ 34m 1mopenssl version 0m
+OpenSSL 1.0.1f 6 Jan 2014
+ 34m 1mpacker version 0m
+Packer v1.0.2
+
+Your version of Packer is out of date! The latest version
+is 1.1.2. You can update by downloading from www.packer.io
+ 34m 1mpostgresql client version 0m
+psql (PostgreSQL) 9.6.6
+ 34m 1mragel version 0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+Copyright (c) 2001-2009 by Adrian Thurston
+ 34m 1msubversion version 0m
+svn, version 1.8.8 (r1568071)
+   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
+
+Copyright (C) 2013 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+The following repository access (RA) modules are available:
+
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - with Cyrus SASL authentication
+  - handles 'svn' scheme
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' scheme
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.3
+  - handles 'http' scheme
+  - handles 'https' scheme
+
+ 34m 1msudo version 0m
+Sudo version 1.8.9p5
+Configure options: -- prefix=/usr -v -- with-all-insults -- with-pam -- with-fqdn -- with-logging=syslog -- with-logfac=authpriv -- with-env-editor -- with-editor=/usr/bin/editor -- with-timeout=15 -- with-password-timeout=0 -- with-passprompt=[sudo] password for %p: -- without-lecture -- with-tty-tickets -- disable-root-mailer -- enable-admin-flag -- with-sendmail=/usr/sbin/sendmail -- with-timedir=/var/lib/sudo -- mandir=/usr/share/man -- libexecdir=/usr/lib/sudo -- with-sssd -- with-sssd-lib=/usr/lib/x86_64-linux-gnu -- with-selinux
+Sudoers policy plugin version 1.8.9p5
+Sudoers file grammar version 43
+
+Sudoers path: /etc/sudoers
+Authentication methods: 'pam'
+Syslog facility if syslog is being used for logging: authpriv
+Syslog priority to use when user authenticates successfully: notice
+Syslog priority to use when user authenticates unsuccessfully: alert
+Send mail if the user is not in sudoers
+Use a separate timestamp for each user/tty combo
+Lecture user the first time they run sudo
+Root may run sudo
+Allow some information gathering to give useful error messages
+Require fully-qualified hostnames in the sudoers file
+Visudo will honor the EDITOR environment variable
+Set the LOGNAME and USER environment variables
+Length at which to wrap log file lines (0 for no wrap): 80
+Authentication timestamp timeout: 15.0 minutes
+Password prompt timeout: 0.0 minutes
+Number of tries to enter a password: 3
+Umask to use or 0777 to use user's: 022
+Path to mail program: /usr/sbin/sendmail
+Flags for mail program: -t
+Address to send mail to: root
+Subject line for mail messages: *** SECURITY information for %h ***
+Incorrect password message: Sorry, try again.
+Path to authentication timestamp dir: /var/lib/sudo
+Default password prompt: [sudo] password for %p:
+Default user to run commands as: root
+Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+Path to the editor for use by visudo: /usr/bin/editor
+When to require a password for 'list' pseudocommand: any
+When to require a password for 'verify' pseudocommand: all
+File descriptors >= 3 will be closed before executing a command
+Environment variables to check for sanity:
+     TZ
+     TERM
+     LINGUAS
+     LC_*
+     LANGUAGE
+     LANG
+     COLORTERM
+Environment variables to remove:
+     RUBYOPT
+     RUBYLIB
+     PYTHONUSERBASE
+     PYTHONINSPECT
+     PYTHONPATH
+     PYTHONHOME
+     TMPPREFIX
+     ZDOTDIR
+     READNULLCMD
+     NULLCMD
+     FPATH
+     PERL5DB
+     PERL5OPT
+     PERL5LIB
+     PERLLIB
+     PERLIO_DEBUG
+     JAVA_TOOL_OPTIONS
+     SHELLOPTS
+     GLOBIGNORE
+     PS4
+     BASH_ENV
+     ENV
+     TERMCAP
+     TERMPATH
+     TERMINFO_DIRS
+     TERMINFO
+     _RLD*
+     LD_*
+     PATH_LOCALE
+     NLSPATH
+     HOSTALIASES
+     RES_OPTIONS
+     LOCALDOMAIN
+     CDPATH
+     IFS
+Environment variables to preserve:
+     JAVA_HOME
+     TRAVIS
+     CI
+     DEBIAN_FRONTEND
+     XAUTHORIZATION
+     XAUTHORITY
+     PS2
+     PS1
+     PATH
+     LS_COLORS
+     KRB5CCNAME
+     HOSTNAME
+     HOME
+     DISPLAY
+     COLORS
+Locale to use while parsing sudoers: C
+Directory in which to store input/output logs: /var/log/sudo-io
+File in which to store the input/output log: %{seq}
+Add an entry to the utmp/utmpx file when allocating a pty
+PAM service name to use
+PAM service name to use for login shells
+Create a new PAM session for the command to run in
+Maximum I/O log sequence number: 0
+
+Local IP address and netmask pairs:
+     172.17.0.2/255.255.0.0
+
+Sudoers I/O plugin version 1.8.9p5
+ 34m 1mgzip version 0m
+gzip 1.6
+Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
+Copyright (C) 1993 Jean-loup Gailly.
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Jean-loup Gailly.
+ 34m 1mzip version 0m
+Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+Currently maintained by E. Gordon.  Please send bug reports to
+the authors using the web page at www.info-zip.org; see README for details.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
+as of above date; see http://www.info-zip.org/ for other sites.
+
+Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
+
+Zip special compilation options:
+     USE_EF_UT_TIME       (store Universal Time)
+     BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
+         bzip2 code and library copyright (c) Julian R Seward
+         (See the bzip2 license for terms of use)
+     SYMLINK_SUPPORT      (symbolic links supported)
+     LARGE_FILE_SUPPORT   (can read and write large files on file system)
+     ZIP64_SUPPORT        (use Zip64 to store large files in archives)
+     UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
+     STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
+     UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
+     [encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
+
+Encryption notice:
+     The encryption code of this program is not copyrighted and is
+     put in the public domain.  It was originally written in Europe
+     and, to the best of our knowledge, can be freely distributed
+     in both source and object forms from any country, including
+     the USA under License Exception TSU of the U.S. Export
+     Administration Regulations (section 740.13(e)) of 6 June 2002.
+
+Zip environment options:
+             ZIP:  [none]
+          ZIPOPT:  [none]
+ 34m 1mvim version 0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
+Included patches: 1-52
+Extra patches: 8.0.0056
+Modified by pkg-vim-maintainers@lists.alioth.debian.org
+Compiled by buildd@
+Huge version without GUI.  Features included (+) or not (-):
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     -tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   -perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      -lua             +rightleft       +windows
++diff            +menu            -ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+ 2nd user vimrc file: "~/.vim/vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector -- param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1
+Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl, -- as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions
+ 34m 1miptables version 0m
+iptables v1.4.21
+ 34m 1mcurl version 0m
+curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
+ 34m 1mwget version 0m
+GNU Wget 1.15 built on linux-gnu.
+ 34m 1mrsync version 0m
+rsync  version 3.1.0  protocol version 31
+ 34m 1mgimme version 0m
+v1.2.0
+ 34m 1mnvm version 0m
+0.33.6
+ 34m 1mperlbrew version 0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
+ 34m 1mphpenv version 0m
+rbenv 1.1.1-25-g6aa70b6
+ 34m 1mrvm version 0m
+rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ 34m 1mdefault ruby version 0m
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ 34m 1mCouchDB version 0m
+couchdb 1.6.1
+ 34m 1mElasticSearch version 0m
+5.5.0
+ 34m 1mInstalled Firefox version 0m
+firefox 56.0.2
+ 34m 1mMongoDB version 0m
+MongoDB 3.4.10
+ 34m 1mPhantomJS version 0m
+2.1.1
+ 34m 1mPre-installed PostgreSQL versions 0m
+9.2.24
+9.3.20
+9.4.15
+9.5.10
+9.6.6
+ 34m 1mRabbitMQ Version 0m
+3.6.14
+ 34m 1mRedis version 0m
+redis-server 4.0.6
+ 34m 1mriak version 0m
+2.2.3
+ 34m 1mPre-installed Go versions 0m
+1.7.4
+ 34m 1mant version 0m
+Apache Ant(TM) version 1.9.3 compiled on April 8 2014
+ 34m 1mmvn version 0m
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/local/maven-3.5.2
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-oracle/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.0-101-generic", arch: "amd64", family: "unix"
+ 34m 1mgradle version 0m
+
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+Gradle 4.0.1
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+
+Build time:   2017-07-07 14:02:41 UTC
+Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
+
+Groovy:       2.4.11
+Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
+JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
+OS:           Linux 4.4.0-101-generic amd64
+
+ 34m 1mlein version 0m
+Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
+ 34m 1mPre-installed Node.js versions 0m
+v4.8.6
+v6.12.0
+v6.12.1
+v8.9
+v8.9.1
+ 34m 1mphpenv versions 0m
+  system
+  5.6
+* 5.6.32 (set by /home/travis/.phpenv/version)
+  7.0
+  7.0.25
+  7.1
+  7.1.11
+  hhvm
+  hhvm-stable
+ 34m 1mcomposer -- version 0m
+Composer version 1.5.2 2017-09-11 16:59:25
+ 34m 1mPre-installed Ruby versions 0m
+ruby-2.2.7
+ruby-2.3.4
+ruby-2.4.1
+travis_fold:end:system_info 0K
+removed ‘/etc/apt/sources.list.d/basho_riak.list'
+ 32;1mNetwork availability confirmed. 0m
+127.0.0.1     localhost
+::1      ip6-localhost ip6-loopback
+fe00::0     ip6-localnet
+ff00::0     ip6-mcastprefix
+ff02::1     ip6-allnodes
+ff02::2     ip6-allrouters
+172.17.0.17     travis-job-mathsci-try-repo-363651830.travisci.net travis-job-mathsci-try-repo-363651830
+W: http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg: Signature by key 15866BAFD9BCC4F3C1E0DFC7D69548E1C17EAB57 uses weak digest algorithm (SHA1)
+travis_fold:start:git.checkout 0Ktravis_time:start:0494f238 0K$ git clone -- depth=50 -- branch=master https://github.com/MathSci/try_repo.git MathSci/try_repo
+Cloning into 'MathSci/try_repo'...
+remote: Counting objects: 42, done. K
+remote: Compressing objects:   3% (1/30)    Kremote: Compressing objects:   6% (2/30)    Kremote: Compressing objects:  10% (3/30)    Kremote: Compressing objects:  13% (4/30)    Kremote: Compressing objects:  16% (5/30)    Kremote: Compressing objects:  20% (6/30)    Kremote: Compressing objects:  23% (7/30)    Kremote: Compressing objects:  26% (8/30)    Kremote: Compressing objects:  30% (9/30)    Kremote: Compressing objects:  33% (10/30)    Kremote: Compressing objects:  36% (11/30)    Kremote: Compressing objects:  40% (12/30)    Kremote: Compressing objects:  43% (13/30)    Kremote: Compressing objects:  46% (14/30)    Kremote: Compressing objects:  50% (15/30)    Kremote: Compressing objects:  53% (16/30)    Kremote: Compressing objects:  56% (17/30)    Kremote: Compressing objects:  60% (18/30)    Kremote: Compressing objects:  63% (19/30)    Kremote: Compressing objects:  66% (20/30)    Kremote: Compressing objects:  70% (21/30)    Kremote: Compressing objects:  73% (22/30)    Kremote: Compressing objects:  76% (23/30)    Kremote: Compressing objects:  80% (24/30)    Kremote: Compressing objects:  83% (25/30)    Kremote: Compressing objects:  86% (26/30)    Kremote: Compressing objects:  90% (27/30)    Kremote: Compressing objects:  93% (28/30)    Kremote: Compressing objects:  96% (29/30)    Kremote: Compressing objects: 100% (30/30)    Kremote: Compressing objects: 100% (30/30), done. K
+remote: Total 42 (delta 17), reused 31 (delta 10), pack-reused 0 K
+Unpacking objects:   2% (1/42)   Unpacking objects:   4% (2/42)   Unpacking objects:   7% (3/42)   Unpacking objects:   9% (4/42)   Unpacking objects:  11% (5/42)   Unpacking objects:  14% (6/42)   Unpacking objects:  16% (7/42)   Unpacking objects:  19% (8/42)   Unpacking objects:  21% (9/42)   Unpacking objects:  23% (10/42)   Unpacking objects:  26% (11/42)   Unpacking objects:  28% (12/42)   Unpacking objects:  30% (13/42)   Unpacking objects:  33% (14/42)   Unpacking objects:  35% (15/42)   Unpacking objects:  38% (16/42)   Unpacking objects:  40% (17/42)   Unpacking objects:  42% (18/42)   Unpacking objects:  45% (19/42)   Unpacking objects:  47% (20/42)   Unpacking objects:  50% (21/42)   Unpacking objects:  52% (22/42)   Unpacking objects:  54% (23/42)   Unpacking objects:  57% (24/42)   Unpacking objects:  59% (25/42)   Unpacking objects:  61% (26/42)   Unpacking objects:  64% (27/42)   Unpacking objects:  66% (28/42)   Unpacking objects:  69% (29/42)   Unpacking objects:  71% (30/42)   Unpacking objects:  73% (31/42)   Unpacking objects:  76% (32/42)   Unpacking objects:  78% (33/42)   Unpacking objects:  80% (34/42)   Unpacking objects:  83% (35/42)   Unpacking objects:  85% (36/42)   Unpacking objects:  88% (37/42)   Unpacking objects:  90% (38/42)   Unpacking objects:  92% (39/42)   Unpacking objects:  95% (40/42)   Unpacking objects:  97% (41/42)   Unpacking objects: 100% (42/42)   Unpacking objects: 100% (42/42), done.
+
+travis_time:end:0494f238:start=1523153844109000438,finish=1523153844418323659,duration=309323221 0K$ cd MathSci/try_repo
+$ git checkout -qf 21a6ce240c375947d9080b7501981951d09df810
+travis_fold:end:git.checkout 0K
+ 33;1mSetting environment variables from .travis.yml 0m
+$ export PYTHON=3.6
+$ export PANDAS=0.22
+
+travis_time:start:2344abe6 0K$ source ~/virtualenv/python2.7/bin/activate
+
+travis_time:end:2344abe6:start=1523153849589604957,finish=1523153849596566271,duration=6961314 0K$ python -- version
+Python 2.7.14
+$ pip -- version
+pip 9.0.1 from /home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages (python 2.7)
+travis_fold:start:install.1 0Ktravis_time:start:081082c8 0K$ if [[ "$PYTHON" == "2.7" ]]; then wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh; else wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh; fi
+ -- 2018-04-08 02:17:30 -- http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+Resolving repo.continuum.io (repo.continuum.io)... 104.16.19.10, 104.16.18.10, 2400:cb00:2048:1::6810:120a, ...
+Connecting to repo.continuum.io (repo.continuum.io)|104.16.19.10|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh [following]
+ -- 2018-04-08 02:17:30 -- https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+Connecting to repo.continuum.io (repo.continuum.io)|104.16.19.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 58304693 (56M) [application/x-sh]
+Saving to: ‘miniconda.sh'
+
+ 0% [                                       ] 0 -- .-K/s              69% [==========================>            ] 40,631,171   194MB/s             100%[======================================>] 58,304,693   208MB/s   in 0.3s
+
+2018-04-08 02:17:30 (208 MB/s) - ‘miniconda.sh' saved [58304693/58304693]
+
+
+travis_time:end:081082c8:start=1523153850120191544,finish=1523153850427118444,duration=306926900 0Ktravis_fold:end:install.1 0Ktravis_fold:start:install.2 0Ktravis_time:start:0170abd5 0K$ bash miniconda.sh -b -p $HOME/miniconda
+PREFIX=/home/travis/miniconda
+installing: python-3.6.4-hc3d631a_1 ...
+Python 3.6.4 :: Anaconda, Inc.
+installing: ca-certificates-2017.08.26-h1d4fec5_0 ...
+installing: conda-env-2.6.0-h36134e3_1 ...
+installing: libgcc-ng-7.2.0-h7cc24e2_2 ...
+installing: libstdcxx-ng-7.2.0-h7a57d05_2 ...
+installing: libffi-3.2.1-hd88cf55_4 ...
+installing: ncurses-6.0-h9df7e31_2 ...
+installing: openssl-1.0.2n-hb7f436b_0 ...
+installing: tk-8.6.7-hc745277_3 ...
+installing: xz-5.2.3-h55aa19d_2 ...
+installing: yaml-0.1.7-had09818_2 ...
+installing: zlib-1.2.11-ha838bed_2 ...
+installing: libedit-3.1-heed3624_0 ...
+installing: readline-7.0-ha6073c6_4 ...
+installing: sqlite-3.22.0-h1bed415_0 ...
+installing: asn1crypto-0.24.0-py36_0 ...
+installing: certifi-2018.1.18-py36_0 ...
+installing: chardet-3.0.4-py36h0f667ec_1 ...
+installing: idna-2.6-py36h82fb2a8_1 ...
+installing: pycosat-0.6.3-py36h0a5515d_0 ...
+installing: pycparser-2.18-py36hf9f622e_1 ...
+installing: pysocks-1.6.7-py36hd97a5b1_1 ...
+installing: ruamel_yaml-0.15.35-py36h14c3975_1 ...
+installing: six-1.11.0-py36h372c433_1 ...
+installing: cffi-1.11.4-py36h9745a5d_0 ...
+installing: setuptools-38.4.0-py36_0 ...
+installing: cryptography-2.1.4-py36hd09be54_0 ...
+installing: wheel-0.30.0-py36hfd4bba0_1 ...
+installing: pip-9.0.1-py36h6c6f9ce_4 ...
+installing: pyopenssl-17.5.0-py36h20ba746_0 ...
+installing: urllib3-1.22-py36hbe7ace6_0 ...
+installing: requests-2.18.4-py36he2e5f8d_1 ...
+installing: conda-4.4.10-py36_0 ...
+installation finished.
+
+travis_time:end:0170abd5:start=1523153850432229392,finish=1523153861566005776,duration=11133776384 0Ktravis_fold:end:install.2 0Ktravis_fold:start:install.3 0Ktravis_time:start:15eb0b90 0K$ export PATH="$HOME/miniconda/bin:$PATH"
+
+travis_time:end:15eb0b90:start=1523153861571224239,finish=1523153861575536280,duration=4312041 0Ktravis_fold:end:install.3 0Ktravis_fold:start:install.4 0Ktravis_time:start:004f0c7a 0K$ hash -r
+
+travis_time:end:004f0c7a:start=1523153861580611148,finish=1523153861584691462,duration=4080314 0Ktravis_fold:end:install.4 0Ktravis_fold:start:install.5 0Ktravis_time:start:23607c3d 0K$ conda config -- set always_yes yes -- set changeps1 no
+
+travis_time:end:23607c3d:start=1523153861589687580,finish=1523153861806854802,duration=217167222 0Ktravis_fold:end:install.5 0Ktravis_fold:start:install.6 0Ktravis_time:start:0314b24f 0K$ conda config -- add channels pandas
+
+travis_time:end:0314b24f:start=1523153861812147921,finish=1523153862035408634,duration=223260713 0Ktravis_fold:end:install.6 0Ktravis_fold:start:install.7 0Ktravis_time:start:1f851564 0K$ conda update -q conda
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda
+
+  added / updated specs:
+    - conda
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+ --  --  --  --  --  --  --  --  --  --  --  --  -- -| --  --  --  --  --  --  --  -- -
+    ca-certificates-2018.03.07 |                0         124 KB
+    conda-4.5.0                |           py36_0         1.0 MB
+    openssl-1.0.2o             |       h20670df_0         3.4 MB
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+                                           Total:         4.6 MB
+
+The following packages will be UPDATED:
+
+    ca-certificates: 2017.08.26-h1d4fec5_0 -- > 2018.03.07-0
+    conda:           4.4.10-py36_0 -- > 4.5.0-py36_0
+    openssl:         1.0.2n-hb7f436b_0 -- > 1.0.2o-h20670df_0
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+travis_time:end:1f851564:start=1523153862040487302,finish=1523153875767112490,duration=13726625188 0Ktravis_fold:end:install.7 0Ktravis_fold:start:install.8 0Ktravis_time:start:03259e40 0K$ conda info -a
+
+     active environment : None
+       user config file : /home/travis/.condarc
+ populated config files : /home/travis/.condarc
+          conda version : 4.5.0
+    conda-build version : not installed
+         python version : 3.6.4.final.0
+       base environment : /home/travis/miniconda  (writable)
+           channel URLs : https://conda.anaconda.org/pandas/linux-64
+                          https://conda.anaconda.org/pandas/noarch
+                          https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/free/linux-64
+                          https://repo.anaconda.com/pkgs/free/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+                          https://repo.anaconda.com/pkgs/pro/linux-64
+                          https://repo.anaconda.com/pkgs/pro/noarch
+          package cache : /home/travis/miniconda/pkgs
+                          /home/travis/.conda/pkgs
+       envs directories : /home/travis/miniconda/envs
+                          /home/travis/.conda/envs
+               platform : linux-64
+             user-agent : conda/4.5.0 requests/2.18.4 CPython/3.6.4 Linux/4.14.12-041412-generic ubuntu/14.04 glibc/2.19
+                UID:GID : 2000:2000
+             netrc file : None
+           offline mode : False
+
+# conda environments:
+#
+base                  *  /home/travis/miniconda
+
+sys.version: 3.6.4 |Anaconda, Inc.| (default, Jan 16 ...
+sys.prefix: /home/travis/miniconda
+sys.executable: /home/travis/miniconda/bin/python
+conda location: /home/travis/miniconda/lib/python3.6/site-packages/conda
+conda-build: None
+conda-env: /home/travis/miniconda/bin/conda-env
+user site dirs:
+
+CIO_TEST: <not set>
+CONDA_ROOT: /home/travis/miniconda
+GEM_PATH: /home/travis/.rvm/gems/ruby-2.4.1:/home/travis/.rvm/gems/ruby-2.4.1@global
+GOPATH: /home/travis/gopath
+MANPATH: /home/travis/.nvm/versions/node/v8.9.1/share/man:/home/travis/.kiex/elixirs/elixir-1.4.5/man:/home/travis/.rvm/rubies/ruby-2.4.1/share/man:/usr/local/man:/usr/local/cmake-3.9.2/man:/usr/local/clang-5.0.0/share/man:/usr/local/share/man:/usr/share/man:/home/travis/.rvm/man
+PATH: /home/travis/miniconda/bin:/home/travis/virtualenv/python2.7.14/bin:/home/travis/bin:/home/travis/.local/bin:/opt/pyenv/shims:/home/travis/.phpenv/shims:/home/travis/perl5/perlbrew/bin:/home/travis/.nvm/versions/node/v8.9.1/bin:/home/travis/.kiex/elixirs/elixir-1.4.5/bin:/home/travis/.kiex/bin:/home/travis/.rvm/gems/ruby-2.4.1/bin:/home/travis/.rvm/gems/ruby-2.4.1@global/bin:/home/travis/.rvm/rubies/ruby-2.4.1/bin:/home/travis/gopath/bin:/usr/local/phantomjs/bin:/usr/local/phantomjs:/usr/local/neo4j-3.2.7/bin:/usr/local/maven-3.5.2/bin:/usr/local/cmake-3.9.2/bin:/usr/local/clang-5.0.0/bin:/home/travis/.gimme/versions/go1.7.4.linux.amd64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.phpenv/bin:/opt/pyenv/bin:/home/travis/.yarn/bin
+PYTHON: 3.6
+PYTHON_CFLAGS: -g -fstack-protector -- param=ssp-buffer-size=4 -Wformat -Werror=format-security
+PYTHON_CONFIGURE_OPTS: -- enable-unicode=ucs4 -- with-wide-unicode -- enable-shared -- enable-ipv6 -- enable-loadable-sqlite-extensions -- with-computed-gotos
+REQUESTS_CA_BUNDLE: <not set>
+SSL_CERT_FILE: <not set>
+rvm_bin_path: /home/travis/.rvm/bin
+rvm_path: /home/travis/.rvm
+
+
+WARNING: could not import _license.show_info
+# try:
+# $ conda install -n root _license
+
+travis_time:end:03259e40:start=1523153875772535392,finish=1523153876364274089,duration=591738697 0Ktravis_fold:end:install.8 0Ktravis_fold:start:install.9 0Ktravis_time:start:2d51fccc 0K$ conda create -q -n test-environment python=$PYTHON coverage setuptools html5lib lxml pytest pytest-cov wrapt
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda/envs/test-environment
+
+  added / updated specs:
+    - coverage
+    - html5lib
+    - lxml
+    - pytest
+    - pytest-cov
+    - python=3.6
+    - setuptools
+    - wrapt
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+ --  --  --  --  --  --  --  --  --  --  --  --  -- -| --  --  --  --  --  --  --  -- -
+    py-1.5.3                   |           py36_0         135 KB
+    setuptools-39.0.1          |           py36_0         549 KB
+    wheel-0.31.0               |           py36_0          62 KB
+    pluggy-0.6.0               |   py36hb689045_0          23 KB
+    libxml2-2.9.8              |       hf84eae3_0         2.0 MB
+    wrapt-1.10.11              |   py36h28b7045_0          45 KB
+    pytest-3.5.0               |           py36_0         293 KB
+    webencodings-0.5.1         |   py36h800622e_1          19 KB
+    more-itertools-4.1.0       |           py36_0          76 KB
+    pip-9.0.3                  |           py36_0         2.3 MB
+    pytest-cov-2.5.1           |   py36hd4733f3_0          24 KB
+    coverage-4.5.1             |   py36h14c3975_0         211 KB
+    libgcc-ng-7.2.0            |       hdf63c60_3         6.1 MB
+    icu-58.2                   |       h9c2bf20_1        22.5 MB
+    libstdcxx-ng-7.2.0         |       hdf63c60_3         2.5 MB
+    libxslt-1.1.32             |       h1312cb7_0         538 KB
+    html5lib-1.0.1             |   py36h2f9c1c0_0         181 KB
+    attrs-17.4.0               |           py36_0          41 KB
+    python-3.6.5               |       hc3d631a_0        29.4 MB
+    lxml-4.2.1                 |   py36h23eabaa_0         1.4 MB
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+                                           Total:        68.4 MB
+
+The following NEW packages will be INSTALLED:
+
+    attrs:           17.4.0-py36_0
+    ca-certificates: 2018.03.07-0
+    certifi:         2018.1.18-py36_0
+    coverage:        4.5.1-py36h14c3975_0
+    html5lib:        1.0.1-py36h2f9c1c0_0
+    icu:             58.2-h9c2bf20_1
+    libedit:         3.1-heed3624_0
+    libffi:          3.2.1-hd88cf55_4
+    libgcc-ng:       7.2.0-hdf63c60_3
+    libstdcxx-ng:    7.2.0-hdf63c60_3
+    libxml2:         2.9.8-hf84eae3_0
+    libxslt:         1.1.32-h1312cb7_0
+    lxml:            4.2.1-py36h23eabaa_0
+    more-itertools:  4.1.0-py36_0
+    ncurses:         6.0-h9df7e31_2
+    openssl:         1.0.2o-h20670df_0
+    pip:             9.0.3-py36_0
+    pluggy:          0.6.0-py36hb689045_0
+    py:              1.5.3-py36_0
+    pytest:          3.5.0-py36_0
+    pytest-cov:      2.5.1-py36hd4733f3_0
+    python:          3.6.5-hc3d631a_0
+    readline:        7.0-ha6073c6_4
+    setuptools:      39.0.1-py36_0
+    six:             1.11.0-py36h372c433_1
+    sqlite:          3.22.0-h1bed415_0
+    tk:              8.6.7-hc745277_3
+    webencodings:    0.5.1-py36h800622e_1
+    wheel:           0.31.0-py36_0
+    wrapt:           1.10.11-py36h28b7045_0
+    xz:              5.2.3-h55aa19d_2
+    zlib:            1.2.11-ha838bed_2
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+travis_time:end:2d51fccc:start=1523153876370194827,finish=1523153911455755006,duration=35085560179 0Ktravis_fold:end:install.9 0Ktravis_fold:start:install.10 0Ktravis_time:start:0f7ae9e4 0K$ source activate test-environment
+
+travis_time:end:0f7ae9e4:start=1523153911462157856,finish=1523153911660682159,duration=198524303 0Ktravis_fold:end:install.10 0Ktravis_fold:start:install.11 0Ktravis_time:start:03e7a5c4 0K$ if [[ "$PANDAS" == "MASTER" ]]; then conda install numpy pytz python-dateutil; PRE_WHEELS="https://7933911d6844c6c53a7d-47bd50c35cd79bd838daf386af554a83.ssl.cf2.rackcdn.com"; pip install -- pre -- upgrade -- timeout=60 -f $PRE_WHEELS pandas; else conda install pandas=$PANDAS; fi
+Solving environment: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda/envs/test-environment
+
+  added / updated specs:
+    - pandas=0.22
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+ --  --  --  --  --  --  --  --  --  --  --  --  -- -| --  --  --  --  --  --  --  -- -
+    libgfortran-ng-7.2.0       |       hdf63c60_3         1.2 MB
+    python-dateutil-2.7.2      |           py36_0         256 KB
+    mkl-2018.0.2               |                1       205.2 MB
+    intel-openmp-2018.0.0      |                8         620 KB
+    mkl_random-1.0.1           |   py36h629b387_0         373 KB
+    pandas-0.22.0              |   py36hf484d3e_0        10.6 MB
+    mkl_fft-1.0.1              |   py36h3010b51_0         140 KB
+    pytz-2018.3                |           py36_0         212 KB
+    numpy-1.14.2               |   py36hdbf6ddf_1         4.1 MB
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+                                           Total:       222.8 MB
+
+The following NEW packages will be INSTALLED:
+
+    intel-openmp:    2018.0.0-8
+    libgfortran-ng:  7.2.0-hdf63c60_3
+    mkl:             2018.0.2-1
+    mkl_fft:         1.0.1-py36h3010b51_0
+    mkl_random:      1.0.1-py36h629b387_0
+    numpy:           1.14.2-py36hdbf6ddf_1
+    pandas:          0.22.0-py36hf484d3e_0
+    python-dateutil: 2.7.2-py36_0
+    pytz:            2018.3-py36_0
+
+
+Downloading and Extracting Packages
+libgfortran-ng 7.2.0:   0% 0/1 [00:00<?, ?it/s]libgfortran-ng 7.2.0:  75% 0.75/1 [00:00<00:00,  2.55it/s]libgfortran-ng 7.2.0:  99% 0.9864864864864865/1 [00:00<00:00,  1.73it/s]libgfortran-ng 7.2.0: 100% 1.0/1 [00:00<00:00,  1.86it/s]
+python-dateutil 2.7.2:   0% 0/1 [00:00<?, ?it/s]python-dateutil 2.7.2: 100% 1.0/1 [00:00<00:00,  9.97it/s]
+mkl 2018.0.2:   0% 0/1 [00:00<?, ?it/s]mkl 2018.0.2:   3% 0.030893688054606336/1 [00:00<00:03,  3.24s/it]mkl 2018.0.2:   7% 0.06818311189870604/1 [00:00<00:02,  3.08s/it] mkl 2018.0.2:  10% 0.10467306876911905/1 [00:00<00:02,  2.98s/it]mkl 2018.0.2:  14% 0.1416198639102102/1 [00:00<00:02,  2.90s/it] mkl 2018.0.2:  18% 0.17759587772611038/1 [00:00<00:02,  2.86s/it]mkl 2018.0.2:  21% 0.21368610110968006/1 [00:00<00:02,  2.84s/it]mkl 2018.0.2:  25% 0.25211762063047505/1 [00:00<00:02,  2.77s/it]mkl 2018.0.2:  29% 0.2900923018805919/1 [00:00<00:01,  2.73s/it] mkl 2018.0.2:  33% 0.3270962018055178/1 [00:00<00:01,  2.72s/it]mkl 2018.0.2:  36% 0.3627295869184094/1 [00:01<00:01,  2.75s/it]mkl 2018.0.2:  40% 0.3993337533564919/1 [00:01<00:01,  2.75s/it]mkl 2018.0.2:  44% 0.43519555760472256/1 [00:01<00:01,  2.81s/it]mkl 2018.0.2:  47% 0.47082894271761416/1 [00:01<00:01,  2.81s/it]mkl 2018.0.2:  51% 0.5073760043718619/1 [00:01<00:01,  2.79s/it] mkl 2018.0.2:  54% 0.5431235990524231/1 [00:01<00:01,  2.81s/it]mkl 2018.0.2:  58% 0.5796706607066708/1 [00:01<00:01,  2.79s/it]mkl 2018.0.2:  62% 0.61587509365791/1 [00:01<00:01,  2.78s/it]  mkl 2018.0.2:  65% 0.6525934696636622/1 [00:01<00:00,  2.77s/it]mkl 2018.0.2:  69% 0.6905681509137791/1 [00:01<00:00,  2.73s/it]mkl 2018.0.2:  73% 0.7284857273800611/1 [00:02<00:00,  2.70s/it]mkl 2018.0.2:  77% 0.7685185185185185/1 [00:35<00:57, 250.37s/it]mkl 2018.0.2:  87% 0.8657407407407407/1 [00:35<00:23, 176.23s/it]mkl 2018.0.2:  88% 0.8796296296296297/1 [00:36<00:17, 145.07s/it]mkl 2018.0.2:  89% 0.8888888888888888/1 [00:37<00:13, 123.91s/it]mkl 2018.0.2:  90% 0.8981481481481481/1 [00:37<00:11, 110.83s/it]mkl 2018.0.2:  90% 0.9027777777777778/1 [00:38<00:09, 102.54s/it]mkl 2018.0.2:  91% 0.9074074074074074/1 [00:38<00:09, 105.86s/it]mkl 2018.0.2:  91% 0.912037037037037/1 [00:39<00:09, 108.08s/it] mkl 2018.0.2:  92% 0.9166666666666666/1 [00:39<00:09, 109.47s/it]mkl 2018.0.2:  92% 0.9212962962962963/1 [00:40<00:08, 112.47s/it]mkl 2018.0.2:  93% 0.9259259259259259/1 [00:40<00:08, 115.36s/it]mkl 2018.0.2:  93% 0.9305555555555556/1 [00:41<00:08, 118.11s/it]mkl 2018.0.2:  94% 0.9351851851851851/1 [00:42<00:08, 124.13s/it]mkl 2018.0.2:  94% 0.9398148148148149/1 [00:43<00:08, 144.06s/it]mkl 2018.0.2:  94% 0.9444444444444444/1 [00:44<00:09, 164.96s/it]mkl 2018.0.2:  95% 0.9490740740740741/1 [00:45<00:09, 181.41s/it]mkl 2018.0.2:  95% 0.9537037037037037/1 [00:46<00:10, 218.08s/it]mkl 2018.0.2:  96% 0.9583333333333334/1 [00:48<00:10, 260.42s/it]mkl 2018.0.2:  96% 0.962962962962963/1 [00:49<00:10, 287.34s/it] mkl 2018.0.2:  97% 0.9675925925925926/1 [00:51<00:10, 326.40s/it]mkl 2018.0.2:  97% 0.9722222222222222/1 [00:53<00:09, 356.41s/it]mkl 2018.0.2:  98% 0.9768518518518519/1 [00:55<00:09, 394.14s/it]mkl 2018.0.2:  98% 0.9814814814814815/1 [00:57<00:07, 401.32s/it]mkl 2018.0.2:  99% 0.9861111111111112/1 [01:00<00:06, 443.78s/it]mkl 2018.0.2:  99% 0.9907407407407407/1 [01:03<00:04, 505.59s/it]mkl 2018.0.2: 100% 0.9953703703703703/1 [01:06<00:02, 557.43s/it]mkl 2018.0.2: 100% 1.0/1 [01:10<00:00, 620.57s/it]
+intel-openmp 2018.0.0:   0% 0/1 [00:00<?, ?it/s]intel-openmp 2018.0.0:  75% 0.75/1 [00:00<00:00,  5.61it/s]intel-openmp 2018.0.0: 100% 1.0/1 [00:00<00:00,  4.01it/s]
+mkl_random 1.0.1:   0% 0/1 [00:00<?, ?it/s]mkl_random 1.0.1:  76% 0.7578125/1 [00:00<00:00,  7.11it/s]mkl_random 1.0.1: 100% 1.0/1 [00:00<00:00,  6.68it/s]
+pandas 0.22.0:   0% 0/1 [00:00<?, ?it/s]pandas 0.22.0:  60% 0.598879981250598/1 [00:00<00:00,  5.98it/s]pandas 0.22.0:  78% 0.7785388127853882/1 [00:02<00:00,  3.75s/it]pandas 0.22.0:  91% 0.906773211567732/1 [00:02<00:00,  3.43s/it] pandas 0.22.0: 100% 1.0/1 [00:04<00:00,  4.55s/it]
+mkl_fft 1.0.1:   0% 0/1 [00:00<?, ?it/s]mkl_fft 1.0.1: 100% 1.0/1 [00:00<00:00, 14.90it/s]
+pytz 2018.3:   0% 0/1 [00:00<?, ?it/s]pytz 2018.3:  75% 0.75/1 [00:00<00:00,  6.25it/s]pytz 2018.3:  94% 0.9378980891719746/1 [00:00<00:00,  3.68it/s]pytz 2018.3: 100% 1.0/1 [00:00<00:00,  3.67it/s]
+numpy 1.14.2:   0% 0/1 [00:00<?, ?it/s]numpy 1.14.2:  75% 0.75/1 [00:00<00:00,  1.19s/it]numpy 1.14.2:  86% 0.8585987261146497/1 [00:00<00:00,  1.11s/it]numpy 1.14.2:  91% 0.9095541401273886/1 [00:01<00:00,  1.37s/it]numpy 1.14.2:  96% 0.9601910828025477/1 [00:01<00:00,  1.93s/it]numpy 1.14.2: 100% 1.0/1 [00:01<00:00,  1.86s/it]
+Preparing transaction: | / done
+Verifying transaction: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+Executing transaction: / - \ | done
+
+travis_time:end:03e7a5c4:start=1523153911666232370,finish=1523154000606817991,duration=88940585621 0Ktravis_fold:end:install.11 0Ktravis_fold:start:install.12 0Ktravis_time:start:0042205e 0K$ conda install flake8 matplotlib
+Solving environment: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+
+## Package Plan ##
+
+  environment location: /home/travis/miniconda/envs/test-environment
+
+  added / updated specs:
+    - flake8
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+ --  --  --  --  --  --  --  --  --  --  --  --  -- -| --  --  --  --  --  --  --  -- -
+    matplotlib-2.2.2           |   py36h0e671d2_1         6.6 MB
+    pyqt-5.9.2                 |   py36h751905a_0         5.9 MB
+    expat-2.2.5                |       he0dffb1_0         186 KB
+    gst-plugins-base-1.12.4    |       h33fb286_0         4.8 MB
+    flake8-3.5.0               |           py36_1         122 KB
+    gstreamer-1.12.4           |       hb53b477_0         3.6 MB
+    pcre-8.41                  |       hc27e229_1         251 KB
+    mccabe-0.6.1               |   py36h5ad9710_1          13 KB
+    dbus-1.13.2                |       hc3f9b76_0         554 KB
+    kiwisolver-1.0.1           |   py36h764f252_0          84 KB
+    glib-2.53.6                |       h5d9569c_2         8.4 MB
+    qt-5.9.4                   |       h4e5bff0_0        86.6 MB
+    freetype-2.8               |       hab7d2ae_1         804 KB
+    sip-4.19.8                 |   py36hf484d3e_0         290 KB
+    libpng-1.6.34              |       hb9fc6fc_0         334 KB
+    jpeg-9b                    |       h024ee3a_2         248 KB
+    tornado-5.0.1              |           py36_1         641 KB
+    pycodestyle-2.3.1          |   py36hf609f19_0          55 KB
+    libxcb-1.13                |       h1bed415_0         501 KB
+    pyparsing-2.2.0            |   py36hee85983_1          96 KB
+    cycler-0.10.0              |   py36h93f1223_0          13 KB
+    fontconfig-2.12.6          |       h49f89f6_0         283 KB
+    pyflakes-1.6.0             |   py36h7bd6a15_0          85 KB
+ --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  --  -- 
+                                           Total:       120.5 MB
+
+The following NEW packages will be INSTALLED:
+
+    cycler:           0.10.0-py36h93f1223_0
+    dbus:             1.13.2-hc3f9b76_0
+    expat:            2.2.5-he0dffb1_0
+    flake8:           3.5.0-py36_1
+    fontconfig:       2.12.6-h49f89f6_0
+    freetype:         2.8-hab7d2ae_1
+    glib:             2.53.6-h5d9569c_2
+    gst-plugins-base: 1.12.4-h33fb286_0
+    gstreamer:        1.12.4-hb53b477_0
+    jpeg:             9b-h024ee3a_2
+    kiwisolver:       1.0.1-py36h764f252_0
+    libpng:           1.6.34-hb9fc6fc_0
+    libxcb:           1.13-h1bed415_0
+    matplotlib:       2.2.2-py36h0e671d2_1
+    mccabe:           0.6.1-py36h5ad9710_1
+    pcre:             8.41-hc27e229_1
+    pycodestyle:      2.3.1-py36hf609f19_0
+    pyflakes:         1.6.0-py36h7bd6a15_0
+    pyparsing:        2.2.0-py36hee85983_1
+    pyqt:             5.9.2-py36h751905a_0
+    qt:               5.9.4-h4e5bff0_0
+    sip:              4.19.8-py36hf484d3e_0
+    tornado:          5.0.1-py36_1
+
+
+Downloading and Extracting Packages
+matplotlib 2.2.2:   0% 0/1 [00:00<?, ?it/s]matplotlib 2.2.2:  71% 0.7088264372681681/1 [00:00<00:00,  7.08it/s]matplotlib 2.2.2:  92% 0.9214175654853621/1 [00:01<00:00,  1.78s/it]matplotlib 2.2.2: 100% 1.0/1 [00:02<00:00,  2.23s/it]
+pyqt 5.9.2:   0% 0/1 [00:00<?, ?it/s]pyqt 5.9.2:  75% 0.75/1 [00:01<00:00,  1.69s/it]pyqt 5.9.2:  84% 0.8417721518987342/1 [00:01<00:00,  1.51s/it]pyqt 5.9.2:  93% 0.9287974683544304/1 [00:01<00:00,  1.44s/it]pyqt 5.9.2:  99% 0.9857594936708861/1 [00:01<00:00,  1.54s/it]pyqt 5.9.2: 100% 1.0/1 [00:02<00:00,  2.69s/it]
+expat 2.2.5:   0% 0/1 [00:00<?, ?it/s]expat 2.2.5: 100% 1.0/1 [00:00<00:00, 11.66it/s]
+gst-plugins-base 1.12.4:   0% 0/1 [00:00<?, ?it/s]gst-plugins-base 1.12.4:  75% 0.75/1 [00:00<00:00,  1.03s/it]gst-plugins-base 1.12.4:  95% 0.9468325791855203/1 [00:00<00:00,  1.15it/s]gst-plugins-base 1.12.4: 100% 1.0/1 [00:01<00:00,  1.54s/it]
+flake8 3.5.0:   0% 0/1 [00:00<?, ?it/s]flake8 3.5.0:  90% 0.9047619047619048/1 [00:00<00:00,  9.03it/s]flake8 3.5.0: 100% 1.0/1 [00:00<00:00,  7.64it/s]
+gstreamer 1.12.4:   0% 0/1 [00:00<?, ?it/s]gstreamer 1.12.4:  75% 0.75/1 [00:00<00:00,  1.20it/s]gstreamer 1.12.4:  98% 0.9754601226993865/1 [00:00<00:00,  1.38it/s]gstreamer 1.12.4: 100% 1.0/1 [00:01<00:00,  1.27s/it]
+pcre 8.41:   0% 0/1 [00:00<?, ?it/s]pcre 8.41:  76% 0.7560975609756098/1 [00:00<00:00,  6.95it/s]pcre 8.41: 100% 1.0/1 [00:00<00:00,  7.00it/s]
+mccabe 0.6.1:   0% 0/1 [00:00<?, ?it/s]mccabe 0.6.1: 100% 1.0/1 [00:00<00:00, 28.93it/s]
+dbus 1.13.2:   0% 0/1 [00:00<?, ?it/s]dbus 1.13.2:  75% 0.75/1 [00:00<00:00,  5.47it/s]dbus 1.13.2: 100% 1.0/1 [00:00<00:00,  4.24it/s]
+kiwisolver 1.0.1:   0% 0/1 [00:00<?, ?it/s]kiwisolver 1.0.1: 100% 1.0/1 [00:00<00:00, 24.21it/s]
+glib 2.53.6:   0% 0/1 [00:00<?, ?it/s]glib 2.53.6:  75% 0.75/1 [00:01<00:00,  2.25s/it]glib 2.53.6:  85% 0.8461538461538461/1 [00:01<00:00,  1.89s/it]glib 2.53.6:  91% 0.9055944055944056/1 [00:01<00:00,  1.83s/it]glib 2.53.6:  95% 0.9501748251748252/1 [00:02<00:00,  2.66s/it]glib 2.53.6:  99% 0.9880536130536131/1 [00:02<00:00,  5.58s/it]glib 2.53.6: 100% 1.0/1 [00:03<00:00,  3.46s/it]
+qt 5.9.4:   0% 0/1 [00:00<?, ?it/s]qt 5.9.4:   3% 0.03395534846048176/1 [00:00<00:03,  3.54s/it]qt 5.9.4:   7% 0.06642261392070337/1 [00:00<00:03,  3.51s/it]qt 5.9.4:  13% 0.12689289584036612/1 [00:00<00:02,  2.95s/it]qt 5.9.4:  20% 0.19696807712534442/1 [00:00<00:02,  2.49s/it]qt 5.9.4:  27% 0.2693430230470884/1 [00:00<00:01,  2.16s/it] qt 5.9.4:  35% 0.34834670233362763/1 [00:00<00:01,  1.89s/it]qt 5.9.4:  41% 0.4096286658897959/1 [00:00<00:01,  1.82s/it] qt 5.9.4:  47% 0.46928726617295313/1 [00:00<00:00,  1.85s/it]qt 5.9.4:  55% 0.5547843985515367/1 [00:00<00:00,  1.65s/it] qt 5.9.4:  65% 0.6485336275679265/1 [00:01<00:00,  1.47s/it]qt 5.9.4:  75% 0.746476545039595/1 [00:01<00:00,  1.34s/it] qt 5.9.4:  83% 0.8276834640593103/1 [00:14<00:08, 51.14s/it]qt 5.9.4:  84% 0.8409799075964328/1 [00:14<00:06, 38.06s/it]qt 5.9.4:  85% 0.8519125389491781/1 [00:14<00:04, 29.39s/it]qt 5.9.4:  86% 0.862254217255829/1 [00:15<00:03, 23.47s/it] qt 5.9.4:  87% 0.8727033415708606/1 [00:15<00:02, 19.30s/it]qt 5.9.4:  88% 0.8821317288062749/1 [00:15<00:01, 16.70s/it]qt 5.9.4:  89% 0.8909154399914043/1 [00:15<00:01, 15.47s/it]qt 5.9.4:  90% 0.8994036746534866/1 [00:15<00:01, 14.76s/it]qt 5.9.4:  91% 0.9082411088428065/1 [00:15<00:01, 13.74s/it]qt 5.9.4:  92% 0.9166487589986032/1 [00:15<00:01, 14.02s/it]qt 5.9.4:  92% 0.9245997636187816/1 [00:15<00:01, 13.75s/it]qt 5.9.4:  93% 0.9333297517997207/1 [00:15<00:00, 13.07s/it]qt 5.9.4:  94% 0.9414419254324702/1 [00:15<00:00, 13.17s/it]qt 5.9.4:  95% 0.9494197915547438/1 [00:16<00:00, 12.99s/it]qt 5.9.4:  96% 0.957343934672827/1 [00:16<00:00, 14.02s/it] qt 5.9.4:  96% 0.9647308477490062/1 [00:16<00:00, 14.46s/it]qt 5.9.4:  97% 0.9718491458042333/1 [00:16<00:00, 16.14s/it]qt 5.9.4:  98% 0.9783227678091759/1 [00:16<00:00, 19.00s/it]qt 5.9.4:  98% 0.9840174062533577/1 [00:16<00:00, 25.72s/it]qt 5.9.4:  99% 0.9887450306221124/1 [00:17<00:00, 39.21s/it]qt 5.9.4:  99% 0.9924787794133447/1 [00:17<00:00, 71.90s/it]qt 5.9.4: 100% 0.9952992371333405/1 [00:18<00:00, 136.91s/it]qt 5.9.4: 100% 0.9973944342967659/1 [00:19<00:00, 206.20s/it]qt 5.9.4: 100% 0.9989255399161922/1 [00:20<00:00, 403.73s/it]qt 5.9.4: 100% 1.0/1 [00:29<00:00, 29.05s/it]
+freetype 2.8:   0% 0/1 [00:00<?, ?it/s]freetype 2.8:  75% 0.75/1 [00:00<00:00,  5.41it/s]freetype 2.8: 100% 1.0/1 [00:00<00:00,  3.57it/s]
+sip 4.19.8:   0% 0/1 [00:00<?, ?it/s]sip 4.19.8:  76% 0.7571428571428571/1 [00:00<00:00,  7.56it/s]sip 4.19.8: 100% 1.0/1 [00:00<00:00,  8.09it/s]
+libpng 1.6.34:   0% 0/1 [00:00<?, ?it/s]libpng 1.6.34:  76% 0.756578947368421/1 [00:00<00:00,  6.75it/s]libpng 1.6.34: 100% 1.0/1 [00:00<00:00,  6.68it/s]
+jpeg 9b:   0% 0/1 [00:00<?, ?it/s]jpeg 9b:  83% 0.8269230769230769/1 [00:00<00:00,  8.24it/s]jpeg 9b: 100% 1.0/1 [00:00<00:00,  7.80it/s]
+tornado 5.0.1:   0% 0/1 [00:00<?, ?it/s]tornado 5.0.1:  75% 0.75/1 [00:00<00:00,  3.82it/s]tornado 5.0.1:  93% 0.9307692307692308/1 [00:00<00:00,  2.85it/s]tornado 5.0.1: 100% 1.0/1 [00:00<00:00,  2.57it/s]
+pycodestyle 2.3.1:   0% 0/1 [00:00<?, ?it/s]pycodestyle 2.3.1: 100% 1.0/1 [00:00<00:00, 19.12it/s]
+libxcb 1.13:   0% 0/1 [00:00<?, ?it/s]libxcb 1.13:  75% 0.75/1 [00:00<00:00,  4.20it/s]libxcb 1.13:  98% 0.9756410256410256/1 [00:00<00:00,  3.13it/s]libxcb 1.13: 100% 1.0/1 [00:00<00:00,  2.72it/s]
+pyparsing 2.2.0:   0% 0/1 [00:00<?, ?it/s]pyparsing 2.2.0: 100% 1.0/1 [00:00<00:00, 13.92it/s]
+cycler 0.10.0:   0% 0/1 [00:00<?, ?it/s]cycler 0.10.0: 100% 1.0/1 [00:00<00:00, 30.87it/s]
+fontconfig 2.12.6:   0% 0/1 [00:00<?, ?it/s]fontconfig 2.12.6:  75% 0.7528735632183908/1 [00:00<00:00,  5.92it/s]fontconfig 2.12.6: 100% 1.0/1 [00:00<00:00,  5.80it/s]
+pyflakes 1.6.0:   0% 0/1 [00:00<?, ?it/s]pyflakes 1.6.0: 100% 1.0/1 [00:00<00:00, 10.19it/s]
+Preparing transaction: | / - \ done
+Verifying transaction: / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ done
+Executing transaction: / - \ | / - \ | / - \ | / - done
+
+travis_time:end:0042205e:start=1523154000612061263,finish=1523154066578277764,duration=65966216501 0Ktravis_fold:end:install.12 0Ktravis_fold:start:install.13 0Ktravis_time:start:0fbd621c 0K$ conda list
+# packages in environment at /home/travis/miniconda/envs/test-environment:
+#
+# Name                    Version                   Build  Channel
+attrs                     17.4.0                   py36_0
+ca-certificates           2018.03.07                    0
+certifi                   2018.1.18                py36_0
+coverage                  4.5.1            py36h14c3975_0
+cycler                    0.10.0           py36h93f1223_0
+dbus                      1.13.2               hc3f9b76_0
+expat                     2.2.5                he0dffb1_0
+flake8                    3.5.0                    py36_1
+fontconfig                2.12.6               h49f89f6_0
+freetype                  2.8                  hab7d2ae_1
+glib                      2.53.6               h5d9569c_2
+gst-plugins-base          1.12.4               h33fb286_0
+gstreamer                 1.12.4               hb53b477_0
+html5lib                  1.0.1            py36h2f9c1c0_0
+icu                       58.2                 h9c2bf20_1
+intel-openmp              2018.0.0                      8
+jpeg                      9b                   h024ee3a_2
+kiwisolver                1.0.1            py36h764f252_0
+libedit                   3.1                  heed3624_0
+libffi                    3.2.1                hd88cf55_4
+libgcc-ng                 7.2.0                hdf63c60_3
+libgfortran-ng            7.2.0                hdf63c60_3
+libpng                    1.6.34               hb9fc6fc_0
+libstdcxx-ng              7.2.0                hdf63c60_3
+libxcb                    1.13                 h1bed415_0
+libxml2                   2.9.8                hf84eae3_0
+libxslt                   1.1.32               h1312cb7_0
+lxml                      4.2.1            py36h23eabaa_0
+matplotlib                2.2.2            py36h0e671d2_1
+mccabe                    0.6.1            py36h5ad9710_1
+mkl                       2018.0.2                      1
+mkl_fft                   1.0.1            py36h3010b51_0
+mkl_random                1.0.1            py36h629b387_0
+more-itertools            4.1.0                    py36_0
+ncurses                   6.0                  h9df7e31_2
+numpy                     1.14.2           py36hdbf6ddf_1
+openssl                   1.0.2o               h20670df_0
+pandas                    0.22.0           py36hf484d3e_0
+pcre                      8.41                 hc27e229_1
+pip                       9.0.3                    py36_0
+pluggy                    0.6.0            py36hb689045_0
+py                        1.5.3                    py36_0
+pycodestyle               2.3.1            py36hf609f19_0
+pyflakes                  1.6.0            py36h7bd6a15_0
+pyparsing                 2.2.0            py36hee85983_1
+pyqt                      5.9.2            py36h751905a_0
+pytest                    3.5.0                    py36_0
+pytest-cov                2.5.1            py36hd4733f3_0
+python                    3.6.5                hc3d631a_0
+python-dateutil           2.7.2                    py36_0
+pytz                      2018.3                   py36_0
+qt                        5.9.4                h4e5bff0_0
+readline                  7.0                  ha6073c6_4
+setuptools                39.0.1                   py36_0
+sip                       4.19.8           py36hf484d3e_0
+six                       1.11.0           py36h372c433_1
+sqlite                    3.22.0               h1bed415_0
+tk                        8.6.7                hc745277_3
+tornado                   5.0.1                    py36_1
+webencodings              0.5.1            py36h800622e_1
+wheel                     0.31.0                   py36_0
+wrapt                     1.10.11          py36h28b7045_0
+xz                        5.2.3                h55aa19d_2
+zlib                      1.2.11               ha838bed_2
+
+travis_time:end:0fbd621c:start=1523154066583820500,finish=1523154067842422265,duration=1258601765 0Ktravis_fold:end:install.13 0Ktravis_fold:start:install.14 0Ktravis_time:start:03147960 0K$ python setup.py install
+
+travis_time:end:03147960:start=1523154067848757136,finish=1523154067886188445,duration=37431309 0Ktravis_fold:end:install.14 0Ktravis_time:start:17e94ec8 0K$ pytest -s -r xX -- doctest-modules -- ignore=setup.py
+ 1m============================= test session starts ============================== 0m
+platform linux -- Python 3.6.5, pytest-3.5.0, py-1.5.3, pluggy-0.6.0
+rootdir: /home/travis/build/MathSci/try_repo, inifile:
+plugins: cov-2.5.1
+ 1mcollecting 0 items                                                              0m 1mcollecting 1 item                                                               0m 1mcollecting 3 items                                                              0m 1mcollected 3 items                                                               0m
+
+test_4pytest.py ...
+
+ 32m 1m=========================== 3 passed in 0.02 seconds =========================== 0m
+
+travis_time:end:17e94ec8:start=1523154067891794884,finish=1523154068348739819,duration=456944935 0K
+ 32;1mThe command "pytest -s -r xX -- doctest-modules -- ignore=setup.py" exited with 0. 0m
+travis_time:start:0afdbe96 0K$ flake8 -- version
+3.5.0 (mccabe: 0.6.1, pycodestyle: 2.3.1, pyflakes: 1.6.0) CPython 3.6.5 on Linux
+
+travis_time:end:0afdbe96:start=1523154068354752546,finish=1523154068654345204,duration=299592658 0K
+ 32;1mThe command "flake8 -- version" exited with 0. 0m
+travis_time:start:0777f6ca 0K$ flake8 test_4pytest.py
+
+travis_time:end:0777f6ca:start=1523154068660436567,finish=1523154069189961109,duration=529524542 0K
+ 32;1mThe command "flake8 test_4pytest.py" exited with 0. 0m
+
+Done. Your build exited with 0.
