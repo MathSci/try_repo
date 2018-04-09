@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/MathSci/try_repo.svg?branch=master)](https://travis-ci.org/MathSci/try_repo)
 
-- **Dummy repo to test Travis CI and GitHub integration.**
+- **Dummy repo to test Travis CI and GitHub continuous integration.**
 - Create test environment for Python and Miniconda.
     - Prepare code for migration from python27 to python3.
 - Test Travis for pip versus conda installations.
@@ -15,20 +15,20 @@
 
 The Travis continuous integration process
 is summed up in a dot file called `.travis.yml`
-to be placed at the top directory of a particular directory.
+to be placed at the top directory within a git repository.
 There are some useful tricks in writing such a 
 [YAML](https://en.wikipedia.org/wiki/YAML) file,
 especially where a complex scientific stack is needed.
 For the Python ecosystem, the Anaconda distribution
 saves us from the hell of dependencies which involves
-binary files necessary for computational speed.
-We shall use their miniconda service to
-install only what is essential to a particular project.
-As a concrete example, see https://git.io/travis here
-for a reasonable template.
+binaries necessary for computational speed.
+We shall install miniconda prior to
+installing only what is essential to a particular project.
+See our https://git.io/travis for a reasonable example.
 
 Travis is agnostic about the testing utilities.
-We could have alternatively used `nose` and `pylint`.
+We could have alternatively used `nose` and `pylint`,
+instead of `pytest` and `flake8`.
 
 Travis is run on containers and virtual machines
 based on Ubuntu (14.04 has code name *trusty*),
@@ -39,15 +39,16 @@ so the scripting within the YAML file are shell commands.
 
 Watch the status of interim builds at https://travis-ci.org/MathSci/try_repo/builds
 
-There will be many *fails* to purposefully test whether the tests are
-actually picking up on intentional errors.
-The raw logs are also very interesting to see how specific utilities,
+There will be many *fails* to purposefully determine whether the tests are
+actually detecting intentional errors.
+The raw logs are very interesting to see how specific utilities,
 such as pytest and flake8, report back to Travis.
 
 
-### REFERENCES
+### References
 
--  Newbie: https://docs.travis-ci.com/user/for-beginners
+-  YAML Ain't Markup Language: https://en.wikipedia.org/wiki/YAML
+-  Travis newbies: https://docs.travis-ci.com/user/for-beginners
 -  Python setup: https://docs.travis-ci.com/user/languages/python
 -  Install dependencies: https://docs.travis-ci.com/user/installing-dependencies
 -  Customization: https://docs.travis-ci.com/user/customizing-the-build
