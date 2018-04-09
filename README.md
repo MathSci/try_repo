@@ -39,22 +39,31 @@ so the scripting within the YAML file are shell commands.
 
 Watch the status of interim builds at https://travis-ci.org/MathSci/try_repo/builds
 
-There will be many *fails* to purposefully determine whether the tests are
-actually detecting intentional errors.
-The raw logs are very interesting to see how specific utilities,
+***Why ALPHA status forever?***
+There will be many *fails* to determine whether the tests and jobs 
+are actually detecting *intentional* errors.
+Find the last successful build to retrieve a reliable `.travis.yml` 
+file to serve as your starting point.
+
+Tip: What you learn from a successful Travis build can also be used
+to write an effective Docker container file.
+
+The summary logs will show how specific utilities,
 such as pytest and flake8, report back to Travis.
+The raw logs are interesting if you need to see 
+the fine details of the various installations.
 
 
 ### References
 
 -  YAML Ain't Markup Language: https://en.wikipedia.org/wiki/YAML
--  Travis newbies: https://docs.travis-ci.com/user/for-beginners
+-  For Travis newbies: https://docs.travis-ci.com/user/for-beginners
 -  Python setup: https://docs.travis-ci.com/user/languages/python
 -  Install dependencies: https://docs.travis-ci.com/user/installing-dependencies
--  Customization: https://docs.travis-ci.com/user/customizing-the-build
--  Notifications: https://docs.travis-ci.com/user/notifications
+-  Travis customization: https://docs.travis-ci.com/user/customizing-the-build
+-  Notifications from Travis: https://docs.travis-ci.com/user/notifications
 
 ---
 
-Last update : 2018-04-08
+Last update : 2018-04-09
 
